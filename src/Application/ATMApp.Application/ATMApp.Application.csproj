@@ -7,11 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Mapper\" />
-    <Folder Include="DependencyResolver\" />
-    <Folder Include="Models\DTOs\" />
     <Folder Include="Models\VMs\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\ATMApp.Domain\ATMApp.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\ATMApp.Infrastructure\ATMApp.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
